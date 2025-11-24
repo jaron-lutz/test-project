@@ -8,10 +8,22 @@
       <li>VueUse for composition utilities</li>
       <li>shadcn-vue for UI components (MCP configured)</li>
     </ul>
+    <Button @click="handleClick">Click Me</Button>
+    <Button variant="secondary">Click Me</Button>
+    <Button variant="destructive">Click Me</Button>
+    <Button variant="outline">Click Me</Button>
+    <Button variant="ghost">Click Me</Button>
+    <Button variant="link">Click Me</Button>
+
   </div>
 </template>
 
 <script setup lang="ts">
+import { Button } from '@/components/ui/button'
+
+function handleClick() {
+  alert('Button clicked!')
+}
 </script>
 
 <style scoped>
